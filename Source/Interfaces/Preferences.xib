@@ -320,7 +320,7 @@ Gw
             <point key="canvasLocation" x="-364" y="159"/>
         </window>
         <customView translatesAutoresizingMaskIntoConstraints="NO" id="17" userLabel="General">
-            <rect key="frame" x="0.0" y="0.0" width="656" height="502"/>
+            <rect key="frame" x="0.0" y="0.0" width="656" height="570"/>
             <subviews>
                 <button translatesAutoresizingMaskIntoConstraints="NO" id="XRZ-IQ-R00">
                     <rect key="frame" x="180" y="465" width="456" height="22"/>
@@ -894,6 +894,7 @@ Gw
                 <constraint firstItem="KA1-k6-SRR" firstAttribute="leading" secondItem="17" secondAttribute="leading" constant="20" id="KA1-ld-cst"/>
                 <constraint firstItem="KJh-ax-qjk" firstAttribute="leading" secondItem="569" secondAttribute="leading" id="KJh-ld-cst"/>
                 <constraint firstItem="KJh-ax-qjk" firstAttribute="trailing" secondItem="569" secondAttribute="trailing" id="KJh-tr-cst"/>
+                <constraint firstItem="KJh-ax-qjk" firstAttribute="top" secondItem="2aR-JM-Lbr" secondAttribute="bottom" constant="8" id="SAI-fi-nal"/>
                 <constraint firstItem="947" firstAttribute="leading" secondItem="569" secondAttribute="leading" id="KeG-OR-BDE"/>
                 <constraint firstItem="XAX-zM-z61" firstAttribute="leading" secondItem="784" secondAttribute="leading" id="LGi-Au-NT4"/>
                 <constraint firstItem="hMm-gH-Xw4" firstAttribute="top" secondItem="947" secondAttribute="bottom" constant="2" id="Liq-UM-y1F"/>
@@ -907,7 +908,7 @@ Gw
                 <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="F3U-SQ-W2d" secondAttribute="bottom" constant="70" id="PYb-fK-u5u"/>
                 <constraint firstItem="577" firstAttribute="leading" secondItem="17" secondAttribute="leading" constant="20" id="QFi-wi-jse"/>
                 <constraint firstItem="FJw-vU-VgL" firstAttribute="leading" secondItem="569" secondAttribute="leading" id="Quq-iv-5iD"/>
-                <constraint firstAttribute="height" constant="502" id="SqM-0P-Y3b"/>
+                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="570" id="SqM-0P-Y3b"/>
                 <constraint firstAttribute="bottom" secondItem="KJh-ax-qjk" secondAttribute="bottom" constant="20" id="T4k-gQ-ZDC"/>
                 <constraint firstItem="7J9-Yp-qMZ" firstAttribute="top" secondItem="787" secondAttribute="bottom" constant="8" id="VDV-pe-DL0"/>
                 <constraint firstItem="784" firstAttribute="leading" secondItem="569" secondAttribute="leading" id="VOf-4w-xgO"/>
