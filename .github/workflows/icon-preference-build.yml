@@ -1,0 +1,29 @@
+name: Icon Preference App Build
+on:
+  push:
+    branches: [validation/icon-preference]
+permissions:
+  contents: read
+jobs:
+  app:
+    runs-on: macos-26
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+      - name: Build the debug app
+        env:
+          DEVELOPER_DIR: /Applications/Xcode_26.6.app/Contents/Developer
+        run: |
+          set -o pipefail
+          xcodebuild build -project sequel-ace.xcodeproj -scheme "Sequel Ace Debug" -destination 'platform=macOS,arch=arm64' -derivedDataPath "$RUNNER_TEMP/SequelAceIconPreference" CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED=NO > app-build.log 2>&1
+      - name: Package the app
+        run: ditto -c -k --sequesterRsrc --keepParent "$RUNNER_TEMP/SequelAceIconPreference/Build/Products/Debug/Sequel Ace.app" SequelAceIconPreference.zip
+      - name: Upload app and build log
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: icon-preference-app
+          path: |
+            SequelAceIconPreference.zip
+            app-build.log
+          retention-days: 7
