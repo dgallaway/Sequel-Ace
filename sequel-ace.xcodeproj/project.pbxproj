@@ -718,6 +718,8 @@
 		E1D26FDC4F32E31791985973 /* SAAppIconPreferenceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E48B234C2B3447ACC28841 /* SAAppIconPreferenceView.swift */; };
 		E25E2C45C35C4F64A1E4523F /* SAPersistentAppIconController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD35AE8882DEDA92A8CA3CEF /* SAPersistentAppIconController.swift */; };
 		E2C3DBB4D43E212C4E51D226 /* SAPersistentAppIconController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD35AE8882DEDA92A8CA3CEF /* SAPersistentAppIconController.swift */; };
+		31F4142C47CD1B6C9CF61566 /* SAAppIconPreferenceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E48B234C2B3447ACC28841 /* SAAppIconPreferenceView.swift */; };
+		AF4079528C97FD9CB974BB45 /* SAAppIconPreferenceViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA363242C3EB0E000C030583 /* SAAppIconPreferenceViewTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -1624,6 +1626,7 @@
 		4B740AAE33A890B71A93C461 /* SAAppIconControllerTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SAAppIconControllerTests.swift; sourceTree = "<group>"; };
 		68E48B234C2B3447ACC28841 /* SAAppIconPreferenceView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SAAppIconPreferenceView.swift; sourceTree = "<group>"; };
 		DD35AE8882DEDA92A8CA3CEF /* SAPersistentAppIconController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SAPersistentAppIconController.swift; sourceTree = "<group>"; };
+		AA363242C3EB0E000C030583 /* SAAppIconPreferenceViewTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SAAppIconPreferenceViewTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -2757,6 +2760,7 @@
 				D5BD851B6D129D345188D5E5 /* SATableListCellRendererTests.swift */,
 				4B740AAE33A890B71A93C461 /* SAAppIconControllerTests.swift */,
 				2B0B12979BC0D8BB2496688E /* SAPersistentAppIconControllerTests.swift */,
+				AA363242C3EB0E000C030583 /* SAAppIconPreferenceViewTests.swift */,
 			);
 			name = "Unit Tests";
 			path = UnitTests;
@@ -3692,6 +3696,8 @@
 				E2C3DBB4D43E212C4E51D226 /* SAPersistentAppIconController.swift in Sources */,
 				C665BE9167258D7ED5D6FAB5 /* SAAppIconControllerTests.swift in Sources */,
 				59AFD25BD6F747216B91CF8A /* SAPersistentAppIconControllerTests.swift in Sources */,
+				31F4142C47CD1B6C9CF61566 /* SAAppIconPreferenceView.swift in Sources */,
+				AF4079528C97FD9CB974BB45 /* SAAppIconPreferenceViewTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
