@@ -703,9 +703,6 @@ Gw
                                     </binding>
                                 </connections>
                             </popUpButton>
-                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="SAI-co-nPr" customClass="SAAppIconPreferenceHostingView">
-                                <rect key="frame" x="0.0" y="0.0" width="656" height="52"/>
-                            </customView>
                         </subviews>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="m2t-AW-wZp" secondAttribute="trailing" constant="20" id="5va-08-JI4"/>
@@ -715,16 +712,19 @@ Gw
                             <constraint firstItem="A54-fI-5jD" firstAttribute="centerY" secondItem="zSn-Pq-u9O" secondAttribute="centerY" id="RSy-6K-GNB"/>
                             <constraint firstItem="m2t-AW-wZp" firstAttribute="top" secondItem="8QO-1r-5jB" secondAttribute="top" id="cjR-xY-u0O"/>
                             <constraint firstItem="YpU-KB-oKj" firstAttribute="leading" secondItem="zSn-Pq-u9O" secondAttribute="trailing" constant="10" id="jbv-tQ-cWP"/>
-                            <constraint firstItem="SAI-co-nPr" firstAttribute="top" secondItem="YpU-KB-oKj" secondAttribute="bottom" constant="8" id="SAI-to-pPr"/>
-                            <constraint firstItem="SAI-co-nPr" firstAttribute="leading" secondItem="8QO-1r-5jB" secondAttribute="leading" id="SAI-le-fPr"/>
-                            <constraint firstAttribute="trailing" secondItem="SAI-co-nPr" secondAttribute="trailing" id="SAI-ri-gPr"/>
-                            <constraint firstAttribute="bottom" secondItem="SAI-co-nPr" secondAttribute="bottom" constant="9" id="k6U-6l-mIv"/>
+                            <constraint firstAttribute="bottom" secondItem="YpU-KB-oKj" secondAttribute="bottom" constant="9" id="k6U-6l-mIv"/>
                             <constraint firstItem="YpU-KB-oKj" firstAttribute="top" secondItem="m2t-AW-wZp" secondAttribute="bottom" constant="9" id="qvF-s5-WKM"/>
                             <constraint firstAttribute="trailing" secondItem="A54-fI-5jD" secondAttribute="trailing" constant="20" id="wZU-Cc-BI5"/>
                             <constraint firstItem="zSn-Pq-u9O" firstAttribute="leading" secondItem="8QO-1r-5jB" secondAttribute="leading" constant="20" id="wsp-nB-hpQ"/>
                         </constraints>
                     </view>
                 </box>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="SAI-co-nPr" customClass="SAAppIconPreferenceHostingView">
+                    <rect key="frame" x="0.0" y="114" width="656" height="52"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="52" id="SAI-hei-ght"/>
+                    </constraints>
+                </customView>
                 <box boxType="custom" borderType="none" cornerRadius="4" title="Box" titlePosition="noTitle" translatesAutoresizingMaskIntoConstraints="NO" id="F3U-SQ-W2d">
                     <rect key="frame" x="0.0" y="83" width="656" height="31"/>
                     <view key="contentView" id="typ-rs-Tmp">
@@ -877,7 +877,10 @@ Gw
                 <constraint firstItem="787" firstAttribute="leading" secondItem="569" secondAttribute="leading" id="Bbt-nF-FyG"/>
                 <constraint firstItem="gcQ-a7-Kqd" firstAttribute="leading" secondItem="17" secondAttribute="leading" constant="20" id="Bfj-MK-Pq1"/>
                 <constraint firstItem="7J9-Yp-qMZ" firstAttribute="leading" secondItem="17" secondAttribute="leading" id="ES6-K4-QTe"/>
-                <constraint firstItem="F3U-SQ-W2d" firstAttribute="top" secondItem="7J9-Yp-qMZ" secondAttribute="bottom" id="G6O-Ql-CaV"/>
+                <constraint firstItem="SAI-co-nPr" firstAttribute="top" secondItem="7J9-Yp-qMZ" secondAttribute="bottom" constant="8" id="SAI-to-pPr"/>
+                <constraint firstItem="SAI-co-nPr" firstAttribute="leading" secondItem="17" secondAttribute="leading" id="SAI-le-fPr"/>
+                <constraint firstAttribute="trailing" secondItem="SAI-co-nPr" secondAttribute="trailing" id="SAI-ri-gPr"/>
+                <constraint firstItem="F3U-SQ-W2d" firstAttribute="top" secondItem="SAI-co-nPr" secondAttribute="bottom" constant="8" id="G6O-Ql-CaV"/>
                 <constraint firstItem="567" firstAttribute="leading" secondItem="569" secondAttribute="leading" id="GpK-3f-RXE"/>
                 <constraint firstItem="790" firstAttribute="top" secondItem="bHb-uY-JgS" secondAttribute="bottom" constant="18" id="GxQ-uz-O2B"/>
                 <constraint firstItem="1418" firstAttribute="trailing" secondItem="569" secondAttribute="trailing" id="H5T-g6-PU5"/>
