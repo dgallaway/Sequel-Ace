@@ -1,0 +1,19 @@
+name: Icon Preference Layout
+on:
+  push:
+    branches: [validation/icon-layout]
+permissions:
+  contents: read
+jobs:
+  nib:
+    runs-on: macos-26
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+      - run: |
+          mkdir -p "$RUNNER_TEMP/IconPreferenceNib"
+          /Applications/Xcode_26.6.app/Contents/Developer/usr/bin/ibtool --flatten NO --module Sequel_Ace --auto-activate-custom-fonts --target-device mac --minimum-deployment-target 13.5 --compile "$RUNNER_TEMP/IconPreferenceNib/Preferences.nib" Source/Interfaces/Preferences.xib
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: icon-preference-nib
+          path: ${{ runner.temp }}/IconPreferenceNib
+          retention-days: 7
