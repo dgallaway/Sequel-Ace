@@ -142,6 +142,7 @@ static const double SPDelayBeforeCheckingForNewReleases = 10;
     [self switchAppearance];
     SPMainQSync(^{
         [SAAnalyticsConsentPolicy applyAnalyticsConsent];
+        [SAAppIconController applyPreference];
     });
 }
 
@@ -202,6 +203,8 @@ static const double SPDelayBeforeCheckingForNewReleases = 10;
  */
 - (void)applicationDidFinishLaunching:(NSNotification *)notification {
 
+    [SAPersistentAppIconController restoreSavedPreference];
+    [SAAppIconController applyPreference];
     [SAAnalyticsConsentPolicy requestConsentIfNeeded];
     [SAAnalyticsConsentPolicy applyAnalyticsConsent];
 

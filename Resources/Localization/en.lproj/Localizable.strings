@@ -4184,3 +4184,39 @@
 
 /* Vault OIDC login already in progress */
 "Another Vault sign-in is already in progress. Finish or cancel it (including in other windows) and try again." = "Another Vault sign-in is already in progress. Finish or cancel it (including in other windows) and try again.";
+
+/* General preferences: independent app icon appearance */
+"App icon:" = "App icon:";
+
+/* App icon appearance: follow macOS icon settings */
+"System" = "System";
+
+/* App icon appearance: always use the light variant */
+"Light" = "Light";
+
+/* App icon appearance: always use the dark variant */
+"Dark" = "Dark";
+
+/* App icon preference and permission panel action */
+"Apply Icon" = "Apply Icon";
+
+/* Persistent app icon preference description */
+"Keeps the chosen icon in Finder and the Dock when Sequel Ace is closed." = "Keeps the chosen icon in Finder and the Dock when Sequel Ace is closed.";
+
+/* App icon preference: missing bundled image */
+"The selected app icon could not be loaded." = "The selected app icon could not be loaded.";
+
+/* App icon preference: selected app must be this exact installation */
+"Select the copy of Sequel Ace that is currently running." = "Select the copy of Sequel Ace that is currently running.";
+
+/* App icon preference: Finder could not write the custom icon */
+"macOS could not change this app's icon. Check that you have permission to modify this copy of Sequel Ace." = "macOS could not change this app's icon. Check that you have permission to modify this copy of Sequel Ace.";
+
+/* App icon permission panel title */
+"Change App Icon" = "Change App Icon";
+
+/* App icon permission panel: placeholder is the running app's file name */
+"Select %@ to change its icon in Finder and the Dock." = "Select %@ to change its icon in Finder and the Dock.";
+
+/* App icon preference error title */
+"Could Not Change App Icon" = "Could Not Change App Icon";

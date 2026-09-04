@@ -711,6 +711,13 @@
 		FD8099A92C59DE1D0084646F /* SABaseFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2056042C3A7E90008DD271 /* SABaseFormatter.swift */; };
 		FDCF55E52788278500D30655 /* TableSortHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AEACD304316A0931DF8ED26 /* TableSortHelper.swift */; };
 		FE96153A16ECBA48C12BCA09 /* SAFieldEditorCommitPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BCCC96AB0752412886E41B0 /* SAFieldEditorCommitPolicy.swift */; };
+		59AFD25BD6F747216B91CF8A /* SAPersistentAppIconControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0B12979BC0D8BB2496688E /* SAPersistentAppIconControllerTests.swift */; };
+		B3017466BD041417589766C1 /* SAAppIconController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FEC4D9D31854742F9C3FA6D /* SAAppIconController.swift */; };
+		C0B5B919FEBEEE0FD4FE488B /* SAAppIconController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FEC4D9D31854742F9C3FA6D /* SAAppIconController.swift */; };
+		C665BE9167258D7ED5D6FAB5 /* SAAppIconControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B740AAE33A890B71A93C461 /* SAAppIconControllerTests.swift */; };
+		E1D26FDC4F32E31791985973 /* SAAppIconPreferenceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E48B234C2B3447ACC28841 /* SAAppIconPreferenceView.swift */; };
+		E25E2C45C35C4F64A1E4523F /* SAPersistentAppIconController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD35AE8882DEDA92A8CA3CEF /* SAPersistentAppIconController.swift */; };
+		E2C3DBB4D43E212C4E51D226 /* SAPersistentAppIconController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD35AE8882DEDA92A8CA3CEF /* SAPersistentAppIconController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -1612,6 +1619,11 @@
 		FD2056042C3A7E90008DD271 /* SABaseFormatter.swift */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = SABaseFormatter.swift; sourceTree = "<group>"; };
 		FD6DFF862ADB40630057B713 /* SPTableHistoryManager.swift */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = SPTableHistoryManager.swift; sourceTree = "<group>"; tabWidth = 4; usesTabs = 1; };
 		FD8099A62C59DCFA0084646F /* SAUuidFormatterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SAUuidFormatterTests.swift; sourceTree = "<group>"; };
+		1FEC4D9D31854742F9C3FA6D /* SAAppIconController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SAAppIconController.swift; sourceTree = "<group>"; };
+		2B0B12979BC0D8BB2496688E /* SAPersistentAppIconControllerTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SAPersistentAppIconControllerTests.swift; sourceTree = "<group>"; };
+		4B740AAE33A890B71A93C461 /* SAAppIconControllerTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SAAppIconControllerTests.swift; sourceTree = "<group>"; };
+		68E48B234C2B3447ACC28841 /* SAAppIconPreferenceView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SAAppIconPreferenceView.swift; sourceTree = "<group>"; };
+		DD35AE8882DEDA92A8CA3CEF /* SAPersistentAppIconController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SAPersistentAppIconController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -2151,6 +2163,7 @@
 				65F52CCC24AE21F200FED3CB /* SPFilePreferencePane.h */,
 				65F52CC724AE21D600FED3CB /* SPFilePreferencePane.m */,
 				88F0964487758A57DA339AF2 /* SPMCPPreferencePane.swift */,
+				68E48B234C2B3447ACC28841 /* SAAppIconPreferenceView.swift */,
 			);
 			path = Panes;
 			sourceTree = "<group>";
@@ -2742,6 +2755,8 @@
 				812D779A61DFF497CD129924 /* SAQueryFavoriteStoreTests.swift */,
 				93E86B9CAE3B927AC789893E /* SAFieldEditorCommitPolicyTests.swift */,
 				D5BD851B6D129D345188D5E5 /* SATableListCellRendererTests.swift */,
+				4B740AAE33A890B71A93C461 /* SAAppIconControllerTests.swift */,
+				2B0B12979BC0D8BB2496688E /* SAPersistentAppIconControllerTests.swift */,
 			);
 			name = "Unit Tests";
 			path = UnitTests;
@@ -2770,6 +2785,8 @@
 				5AB3422CB850D1768BBDEFC9 /* SADragPasteboard.swift */,
 				1AA5B97BE9E063395AB12888 /* SAAnalyticsConsentPolicy.swift */,
 				F001AB41C248FB0C94ECB906 /* SAAnalyticsConsentPolicy+Firebase.swift */,
+				1FEC4D9D31854742F9C3FA6D /* SAAppIconController.swift */,
+				DD35AE8882DEDA92A8CA3CEF /* SAPersistentAppIconController.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -3671,6 +3688,10 @@
 				6437BC4ED2B743D251F18C2F /* SAFieldEditorCommitPolicyTests.swift in Sources */,
 				77BAF2BFA8B8163A11014DA5 /* SATableListCellRenderer.swift in Sources */,
 				7B182E1F0D6218CA522A86D4 /* SATableListCellRendererTests.swift in Sources */,
+				B3017466BD041417589766C1 /* SAAppIconController.swift in Sources */,
+				E2C3DBB4D43E212C4E51D226 /* SAPersistentAppIconController.swift in Sources */,
+				C665BE9167258D7ED5D6FAB5 /* SAAppIconControllerTests.swift in Sources */,
+				59AFD25BD6F747216B91CF8A /* SAPersistentAppIconControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4010,6 +4031,9 @@
 				6C5D707FD9947026F90C868A /* SASSHTunnelFailure.swift in Sources */,
 				FE96153A16ECBA48C12BCA09 /* SAFieldEditorCommitPolicy.swift in Sources */,
 				5DB3C7CF73628DF0DA31F02E /* SATableListCellRenderer.swift in Sources */,
+				C0B5B919FEBEEE0FD4FE488B /* SAAppIconController.swift in Sources */,
+				E25E2C45C35C4F64A1E4523F /* SAPersistentAppIconController.swift in Sources */,
+				E1D26FDC4F32E31791985973 /* SAAppIconPreferenceView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
