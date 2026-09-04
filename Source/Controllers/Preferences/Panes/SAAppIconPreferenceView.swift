@@ -8,7 +8,7 @@
 import SwiftUI
 
 /// Hosts the SwiftUI preference beside the existing appearance controls.
-@objc final class SAAppIconPreferenceHostingView: NSView {
+@objc(SAAppIconPreferenceHostingView) final class SAAppIconPreferenceHostingView: NSView {
     required init?(coder: NSCoder) {
         super.init(coder: coder)
         installContent()
