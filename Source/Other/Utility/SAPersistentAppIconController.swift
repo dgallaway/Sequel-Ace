@@ -15,7 +15,7 @@ import UniformTypeIdentifiers
     static let bookmarkKey = "AppIconApplicationBookmark"
 
     enum Failure: LocalizedError {
-        case missingImage, differentApplication, cannotApply
+        case missingImage, differentApplication, cannotApply, readOnlyLocation
 
         var errorDescription: String? {
             switch self {
@@ -25,6 +25,8 @@ import UniformTypeIdentifiers
                 return NSLocalizedString("Select the copy of Sequel Ace that is currently running.", comment: "App icon preference: the selected app must be this exact installation")
             case .cannotApply:
                 return NSLocalizedString("macOS could not change this app's icon. Check that you have permission to modify this copy of Sequel Ace.", comment: "App icon preference: Finder could not write the custom icon")
+            case .readOnlyLocation:
+                return NSLocalizedString("Move Sequel Ace to Applications, reopen it, and try again. Its current location is read-only.", comment: "App icon preference: app is running from a disk image or translocated location")
             }
         }
     }
@@ -57,6 +59,9 @@ import UniformTypeIdentifiers
     @discardableResult
     func select(_ appearance: SAAppIconAppearance, using defaults: UserDefaults) throws -> Bool {
         assert(Thread.isMainThread)
+        if (try? applicationURL.resourceValues(forKeys: [.volumeIsReadOnlyKey]).volumeIsReadOnly) == true {
+            throw Failure.readOnlyLocation
+        }
         let image = try image(for: appearance)
         if let url = authorizedApplication(in: defaults),
            (try? apply(image, to: url, appearance: appearance, using: defaults)) == true {

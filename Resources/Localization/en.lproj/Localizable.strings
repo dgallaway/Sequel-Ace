@@ -4220,3 +4220,6 @@
 
 /* App icon preference error title */
 "Could Not Change App Icon" = "Could Not Change App Icon";
+
+/* App icon preference: app is running from a disk image or translocated location */
+"Move Sequel Ace to Applications, reopen it, and try again. Its current location is read-only." = "Move Sequel Ace to Applications, reopen it, and try again. Its current location is read-only.";
